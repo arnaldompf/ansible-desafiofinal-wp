@@ -1,4 +1,4 @@
 ---
-  - name: Get RDS Endpoint
+  - name: Get RDS Endpointd
     ansible.builtin.shell:
       cmd: echo {{ hostvars['wordpressturbinadodb'].endpoint }}
