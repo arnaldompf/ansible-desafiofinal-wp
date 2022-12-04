@@ -1,0 +1,9 @@
+---
+  plugin: aws_rds
+    regions:
+      - us-east-1
+    include_clusters: true
+
+  - name: Get RDS Endpoint
+    ansible.builtin.shell:
+      cmd: echo {{ hostvars['wordpressturbinadodb'].endpoint }}
