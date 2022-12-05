@@ -1,0 +1,9 @@
+---
+  - name: wordpress installation
+    hosts: wordpress2
+    become: yes
+    vars_files: "../ansible/vars/main.yml"
+    #
+    roles:
+      - wordpress
+      
